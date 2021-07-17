@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Vehicle &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Weapon" href="Weapon.html" />
+    <link rel="prev" title="Trigger" href="Trigger.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/server_manual/ServerInstallation.html">Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/server_manual/ServerConfiguration.html">Server Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Doors.html">Doors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Fireworks.html">Fireworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/GravityGun.html">Gravity Gun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Hosting4Free.html">Hosting 4 Free</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PaintingMeshes.html">Painting Meshes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Cable.html">Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StaticMesh.html">Static Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Quat.html">Quaternion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/NanosWorldDefaultPack.html">nanos world Default Assets Pack</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Vault &amp; Marketplace</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../vault/Vault.html">Vault</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Vehicle</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/scripting/classes/Vehicle.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vehicle">
+<span id="id1"></span><h1>Vehicle<a class="headerlink" href="#vehicle" title="Permalink to this headline">¶</a></h1>
+<img alt="https://i.imgur.com/IzVg8VU.jpg" src="https://i.imgur.com/IzVg8VU.jpg" />
+<p>Vehicles are 4-wheeled entities which <a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a>s can possesses and drive. Any Skeletal Mesh can be used to create a Vehicle, although only Skeletal Meshes with Wheels bones can use the built-in feature of animated Wheels.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently only 4-Wheeled vehicles is supported.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please take a look at our Default’s Vehicle package with all built-in Vehicles already properly configured and ready to use: <a class="reference external" href="https://github.com/nanos-world/nanos-world-vehicles">https://github.com/nanos-world/nanos-world-vehicles</a>.</p>
+</div>
+<div class="section" id="related-tutorials">
+<h2>Related Tutorials<a class="headerlink" href="#related-tutorials" title="Permalink to this headline">¶</a></h2>
+<script>
+        DrawCard(
+                "../../tutorials/MonsterTruck.html",
+                "https://i.imgur.com/pBoXKZe.jpg",
+                "Monster Truck",
+                "Check how to configure a vehicle to transform it in a Monster Truck."
+        );
+</script></div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Spawns a SUV Vehicle</span>
+<span class="kd">local</span> <span class="n">vehicle</span> <span class="o">=</span> <span class="n">Vehicle</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(),</span> <span class="s2">&quot;NanosWorld::SK_SUV&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::A_Vehicle_Engine_14&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Configure it&#39;s Engine Speed and Steering Wheel location</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetEngineSetup</span><span class="p">(</span><span class="mi">4500</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetSteeringWheelSetup</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">131</span><span class="p">),</span> <span class="mi">26</span><span class="p">)</span>
+
+<span class="c1">-- Configures each Wheel</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetWheel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Wheel_Front_Left&quot;</span><span class="p">,</span>  <span class="mi">35</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetWheel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Wheel_Front_Right&quot;</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetWheel</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Wheel_Rear_Left&quot;</span><span class="p">,</span>   <span class="mi">35</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetWheel</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;Wheel_Rear_Right&quot;</span><span class="p">,</span>  <span class="mi">35</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="c1">-- Adds 4 Doors/Seats</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetDoor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span> <span class="mi">22</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">18</span><span class="p">,</span> <span class="o">-</span><span class="mi">47</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span> <span class="mi">75</span><span class="p">,</span> <span class="o">-</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetDoor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span> <span class="mi">22</span><span class="p">,</span>  <span class="mi">80</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span> <span class="mi">5</span><span class="p">,</span>   <span class="mi">39</span><span class="p">,</span>  <span class="mi">90</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">),</span> <span class="mi">60</span><span class="p">,</span>  <span class="mi">150</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetDoor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="o">-</span><span class="mi">39</span><span class="p">,</span>  <span class="mi">90</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">),</span> <span class="mi">60</span><span class="p">,</span> <span class="o">-</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">SetDoor</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">80</span><span class="p">,</span>  <span class="mi">80</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span>  <span class="mi">39</span><span class="p">,</span>  <span class="mi">90</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">),</span> <span class="mi">60</span><span class="p">,</span>  <span class="mi">150</span><span class="p">)</span>
+
+<span class="c1">-- Make it ready (so clients only create Physics once and not for each function call above)</span>
+<span class="n">vehicle</span><span class="p">:</span><span class="n">RecreatePhysics</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="constructor-parameters">
+<h2>Constructor Parameters<a class="headerlink" href="#constructor-parameters" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 60%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Type</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Default</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>location</p></td>
+<td><p>Vector(0, 0, 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>rotation</p></td>
+<td><p>Rotator(0, 0, 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>model_name (Skeletal Mesh)</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-collisiontype"><span class="xref std std-term">CollisionType</span></a></p></td>
+<td><p>collision_type</p></td>
+<td><p>CollisionType.Normal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>gravity_enabled</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>auto_create_physics <em>(can be disabled to improve performance when setting several configs. Must call</em> <code class="docutils literal notranslate"><span class="pre">RecreatePhysics()</span></code> <em>after all)</em></p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>auto_unflip <em>(auto rotates the vehicle if flipped)</em></p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>engine_sound_asset</p></td>
+<td><p>NanosWorld::A_Vehicle_Engine_01</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>horn_sound_asset</p></td>
+<td><p>NanosWorld::A_Vehicle_Horn_Toyota</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>brake_sound_asset</p></td>
+<td><p>NanosWorld::A_Vehicle_Brake</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>engine_start_sound_asset</p></td>
+<td><p>NanosWorld::A_Car_Engine_Start</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>vehicle_door_sound_asset</p></td>
+<td><p>NanosWorld::A_Vehicle_Door</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the functions below will reset the vehicle Physics State (automatically), which means the vehicle will stop immediately if moving.</p>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 45%" />
+<col style="width: 40%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>AddStaticMeshAttached( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> id, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> static_mesh_path, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> socket = “”, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> relative_location = Vector(), <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> relative_rotation = Rotator() <br/> )</p></td>
+<td><p>Spawns and Attaches a StaticMesh into this Vehicle in a Socket with relative Location and Rotation. Uses a custom ID to be used for removing it further</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>Horn(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Starts or stops the vehicles horn</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>RecreatePhysics()</p></td>
+<td><p>Recreate the Vehicle Physics (call this after configuring the vehicle if using AutoCreatePhysics = false)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>RemoveStaticMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> id)</p></td>
+<td><p>Removes, if existing, a StaticMesh from this Vehicle given it’s custom ID</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>SetDefaultMaterial( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-materialtype"><span class="xref std std-term">MaterialType</span></a> material_type = MaterialType.Masked <br/> )</p></td>
+<td><p>Replaces all materials of this actor with a nanos basic material with comon parameters available (<em>Masked, Translucent, TranslucentDepth</em>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetDifferentialSetup( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-differentialtype"><span class="xref std std-term">DifferentialType</span></a> differential_type = LimitedSlip_4W, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> front_rear_split = 0.45, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> front_left_right_split = 0.5, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> rear_left_right_split = 0.5, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> center_bias = 1.3, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> front_bias = 1.3, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> rear_bias = 1.3 <br/> )</p></td>
+<td><p>Configures the Vehicle Differential. Check the page bottom to see each property explanation</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetEngineSetup( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> max_rpm = 4500, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> moi = 1, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> damping_rate_full_throttle = 0.15, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> d_r_zero_trt_clutch_engaged = 2, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> d_r_zero_trt_clutch_disengaged = 0.35 <br/> )</p></td>
+<td><p>Configures the Vehicle Engine. Check the page bottom to see each property explanation</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetMaterialColorParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> color <br/> )</p></td>
+<td><p>Sets a Color parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>SetMaterialScalarParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> scalar <br/> )</p></td>
+<td><p>Sets a scalar parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetMaterialTextureParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> texture_path <br/> )</p></td>
+<td><p>Loads a image from computer (relative to <cite>Assets/</cite> folder) and sets as parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>SetMaterialVectorParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> vector <br/> )</p></td>
+<td><p>Sets a Vector parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetVehicleSetup( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> drag_coefficient = 0.3, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> throttle_input_rise_rate = 6, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> throttle_input_fall_rate = 10, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> brake_input_rise_rate = 6, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> brake_input_fall_rate = 10, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> handbrake_input_rise_rate = 12, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> handbrake_input_fall_rate = 12, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> steering_input_rise_rate = 2.5, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> steering_input_fall_rate = 5 <br/> )</p></td>
+<td><p>Configures the Vehicle General Settings. Check the page bottom to see each property explanation</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetTransmissionSetup( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> has_automatic_transmission = true, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> gear_switch_time = 0.5, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> gear_auto_box_latency = 2, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> final_ratio = 4, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> clutch_strength = 10 <br/> )</p></td>
+<td><p>Configures the Vehicle Transmission. Check the page bottom to see each property explanation</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetWheel( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> index (0-3), <br/><span style="margin-left: 10px;"></span><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> bone_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> shape_radius = 30, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> shape_width = 10, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> steer_angle = 70, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> mass = 20, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> damping_rate = 0.25, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> lat_stiff_max_load = 2, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> lat_stiff_value = 17, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> long_stiff_value = 1000, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_force_offset = 0, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_max_raise = 10, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_max_drop = 10, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_natural_frequency = 7, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_damping_ratio = 1, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> max_brake_torque = 1500, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> max_handbrake_torque = 3000, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> is_affected_by_handbrake = true, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> offset = Vector(0, 0, 0) <br/> )</p></td>
+<td><p>Configures a Vehicle Wheel. Check the page bottom to see each property explanation</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetDoor( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> seat_index, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> offset_location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> seat_location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> seat_rotation, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> trigger_radius, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> leave_lateral_offset <br/> )</p></td>
+<td><p>Adds a Door at OffsetLocation from root which will pose the Character at SeatLocation with SeatRotation rotation. LeaveLateralOffset is where the Character will be ejected when leaving it (e.g. -150 for left door or 150 for right door)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSteeringWheelSetup( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> radius <br/> )</p></td>
+<td><p>Configures where the Steering Wheel is located, so Characters can grab it procedurally properly</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetHeadlightsSetup( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> color = Color(1, 0.86, 0.5) <br/> )</p></td>
+<td><p>Configures the Headlights Offset and Color.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetAssetName()</p></td>
+<td><p>Gets the Asset name</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a></p></td>
+<td><p>GetPassenger(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> seat)</p></td>
+<td><p>Gets all passengers. Returns <a class="reference internal" href="../Glossary.html#term-nil"><span class="xref std std-term">nil</span></a> if Seat is invalid or empty.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a>[]</p></td>
+<td><p>GetPassengers()</p></td>
+<td><p>Gets all passengers</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functions-inherited-from-actor">
+<h3>Functions (Inherited from Actor)<a class="headerlink" href="#functions-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>AddImpulse( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> force, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> velocity_change = false <br/> )</p></td>
+<td><p>Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>AttachTo( <br/><span style="margin-left: 10px;"></span> Actor other, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-attachmentrule"><span class="xref std std-term">AttachmentRule</span></a> attachment_rule = SnapToTarget, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> bone_name = “”, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> autodestroy_when_detached = false <br/> )</p></td>
+<td><p>Attaches this Actor to any other Actor, optionally at a specific bone</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>Destroy()</p></td>
+<td><p>Destroys this Actor</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>Detach()</p></td>
+<td><p>Detaches this Actor from AttachedTo Actor</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetCollision(<a class="reference internal" href="../Glossary.html#term-collisiontype"><span class="xref std std-term">CollisionType</span></a>)</p></td>
+<td><p>Sets the actor’s collision <strong>Collision Types</strong>: <em>Normal, Static Only, NoCollision</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetForce(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> force, <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> local = true)</p></td>
+<td><p>Adds a permanent force to this actor. Set to Vector(0, 0, 0) to cancel.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetGravityEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetHighlightEnabled( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Index <br/> )</p></td>
+<td><p>Sets if this Actors is Highlighting at a specific Index color</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetInitialLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the initial location</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the actor’s location in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetNetworkAuthority( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="Player.html#player"><span class="std std-ref">Player</span></a> player = nil, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> time_ms = 0 <br/> )</p></td>
+<td><p>Sets this actor’s new Player network authority. This player will be manually assigned to handle this actor physics and share it’s location with other clients. The authority assignment will still be overriden by the game automatically, to avoid that set a big time value so the player can keep longer with the authority and override the natural authority selection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetRotation(<a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a>)</p></td>
+<td><p>Sets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetScale(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the actor’s scale</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetValue( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a> value, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> sync_on_clients <br/> )</p></td>
+<td><p>Sets a value in this entity, which can be accessed by any package (optionally sync on clients if called from server)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>TranslateTo( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> speed, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> sweep, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> teleport <br/> )</p></td>
+<td><p>Smoothly moves this actor to a Location with a certain Speed - optionally enables sweep to stop when colliding - use teleport flag will not affect velocity</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>RotateTo( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> rotation, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> speed, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> teleport <br/> )</p></td>
+<td><p>Smoothly rotates this actor to a Rotation with a certain Speed - use teleport flag will not affect velocity</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsGravityEnabled()</p></td>
+<td><p>Gets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsInWater()</p></td>
+<td><p>Gets if the actor is in Water</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsNetworkDistributed()</p></td>
+<td><p>Gets if the actor is network distributed. Only actors being network distributed can be set network authority.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsValid()</p></td>
+<td><p>Returns if this entity is valid (i.e. wasn’t destroyed and points to a valid entity)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-table"><span class="xref std std-term">table</span></a></p></td>
+<td><p>GetAttachedEntities()</p></td>
+<td><p>Gets all actors attached to this entity</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a></p></td>
+<td><p>GetAttachedTo()</p></td>
+<td><p>Gets the actor i’m attached to</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="client-only-label" class="client-only-label" src="../../_images/client-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-table"><span class="xref std std-term">table</span></a></p></td>
+<td><p>GetBounds()</p></td>
+<td><p>Gets the actor bounds size. <br/> <br/> Returned Table:  <code class="docutils literal notranslate"><span class="pre">{&quot;Origin&quot;,</span> <span class="pre">&quot;BoxExtent&quot;,</span> <span class="pre">&quot;SphereRadius&quot;}</span></code></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetCollision()</p></td>
+<td><p>Gets the current actor’s collision</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetID()</p></td>
+<td><p>Gets the network ID of this entity (same in both client and server)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetLocation()</p></td>
+<td><p>Get the actor’s position in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetInitialLocation()</p></td>
+<td><p>Gets the initial location</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>GetRotation()</p></td>
+<td><p>Gets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetScale()</p></td>
+<td><p>Gets the actor’s scale</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetType()</p></td>
+<td><p>Returns the type of this Actor</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>any</p></td>
+<td><p>GetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key)</p></td>
+<td><p>Gets a value given a key</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="client-only-label" class="client-only-label" src="../../_images/client-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetVelocity()</p></td>
+<td><p>Returns the current actor Velocity</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>Subscribe(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> event_name, <a class="reference internal" href="../Glossary.html#term-function"><span class="xref std std-term">function</span></a>)</p></td>
+<td><p>Subscribes for an Event</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>Unsubscribe(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> event_name, <a class="reference internal" href="../Glossary.html#term-function"><span class="xref std std-term">function</span></a> = nil)</p></td>
+<td><p>Unsubscribes from all subscribed Events in this Entity and in this Package, optionally passing the function to unsubscribe only that callback</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Horn</p></td>
+<td><p><a class="reference internal" href="#vehicle"><span class="std std-ref">Vehicle</span></a> self, <br/> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> is_honking</p></td>
+<td><p>When Vehicle honks</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Hit</p></td>
+<td><p><a class="reference internal" href="#vehicle"><span class="std std-ref">Vehicle</span></a> self, <br/> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> intensity</p></td>
+<td><p>When Vehicle hits something</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="events-inherited-from-actor">
+<h3>Events (Inherited from Actor)<a class="headerlink" href="#events-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Destroy</p></td>
+<td><p>Entity self</p></td>
+<td><p>Triggered when an Entity is Destroyed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Spawn</p></td>
+<td><p>Entity self</p></td>
+<td><p>Triggered when an Entity is Spawned/Created</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>ValueChange</p></td>
+<td><p>Entity self, <br/> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key, <br/> <a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a> value</p></td>
+<td><p>Triggered when an Entity has it’s value changed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="parameters-detailed">
+<h2>Parameters Detailed<a class="headerlink" href="#parameters-detailed" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Parameter Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-differentialtype"><span class="xref std std-term">DifferentialType</span></a> differential_type</p></td>
+<td><p>(<em>LimitedSlip_4W, LimitedSlip_FrontDrive, LimitedSlip_RearDrive, Open_4W, Open_FrontDrive, Open_RearDrive</em>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> front_rear_split</p></td>
+<td><p>Ratio of torque split between front and rear (&gt;0.5 means more to front, &lt;0.5 means more to rear, works only with 4W type)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> front_left_right_split</p></td>
+<td><p>Ratio of torque split between front-left and front-right (&gt;0.5 means more to front-left, &lt;0.5 means more to front-right, works only with 4W and LimitedSlip_FrontDrive)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> rear_left_right_split</p></td>
+<td><p>Ratio of torque split between rear-left and rear-right (&gt;0.5 means more to rear-left, &lt;0.5 means more to rear-right, works only with 4W and LimitedSlip_RearDrive)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> center_bias</p></td>
+<td><p>Maximum allowed ratio of average front wheel rotation speed and rear wheel rotation speeds (range: 1..inf, works only with LimitedSlip_4W)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> front_bias</p></td>
+<td><p>Maximum allowed ratio of front-left and front-right wheel rotation speeds (range: 1..inf, works only with LimitedSlip_4W, LimitedSlip_FrontDrive)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> rear_bias</p></td>
+<td><p>Maximum allowed ratio of rear-left and rear-right wheel rotation speeds (range: 1..inf, works only with LimitedSlip_4W, LimitedSlip_FrontDrive)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> max_rpm</p></td>
+<td><p>Maximum revolutions per minute of the engine</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> moi</p></td>
+<td><p>Moment of inertia of the engine around the axis of rotation (Kgm^2)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> damping_rate_full_throttle</p></td>
+<td><p>Damping rate of engine when full throttle is applied (Kgm^2/s)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> d_r_zero_trt_clutch_engaged</p></td>
+<td><p>Damping rate of engine in at zero throttle when the clutch is engaged (Kgm^2/s)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> d_r_zero_trt_clutch_disengaged</p></td>
+<td><p>Damping rate of engine in at zero throttle when the clutch is disengaged (in neutral gear) (Kgm^2/s)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> drag_coefficient</p></td>
+<td><p>DragCoefficient of the vehicle chassis</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> …input_rise_rate</p></td>
+<td><p>Rate at which the input value rises</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> …input_fall_rate</p></td>
+<td><p>Rate at which the input value falls</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> gear_switch_time</p></td>
+<td><p>Time it takes to switch gears (seconds)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> gear_auto_box_latency</p></td>
+<td><p>Minimum time it takes the automatic transmission to initiate a gear change (seconds)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> final_ratio</p></td>
+<td><p>The final gear ratio multiplies the transmission gear ratios</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> clutch_strength</p></td>
+<td><p>Strength of clutch (Kgm^2/s)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> shape_radius</p></td>
+<td><p>Radius of the wheel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> shape_width</p></td>
+<td><p>Width of the wheel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> steer_angle</p></td>
+<td><p>Steer angle in degrees for this wheel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> mass</p></td>
+<td><p>Mass of this wheel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> damping_rate</p></td>
+<td><p>Damping rate for this wheel (Kgm^2/s)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> lat_stiff_max_load</p></td>
+<td><p>Max normalized tire load at which the tire can deliver no more lateral stiffness no matter how much extra load is applied to the tire</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> lat_stiff_value</p></td>
+<td><p>How much lateral stiffness to have given lateral slip</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> long_stiff_value</p></td>
+<td><p>How much longitudinal stiffness to have given longitudinal slip</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_force_offset</p></td>
+<td><p>Vertical offset from where suspension forces are applied (along Z-axis)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_max_raise</p></td>
+<td><p>How far the wheel can go above the resting position</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_max_drop</p></td>
+<td><p>How far the wheel can drop below the resting position</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_natural_frequency</p></td>
+<td><p>Oscillation frequency of suspension. Standard cars have values between 5 and 10</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> suspension_damping_ratio</p></td>
+<td><p>The rate at which energy is dissipated from the spring. Standard cars have values between 0.8 and 1.2. Values &lt; 1 are more sluggish, values &gt; 1 or more twitchy</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> max_brake_torque</p></td>
+<td><p>Max brake torque for this wheel (Nm)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> max_handbrake_torque</p></td>
+<td><p>Max handbrake brake torque for this wheel (Nm). A handbrake should have a stronger brake torque than the brake. This will be ignored for wheels that are not affected by the handbrake</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> offset</p></td>
+<td><p>If BoneName is specified, offset the wheel from the bone’s location. Otherwise this offsets the wheel from the vehicle’s origin</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Weapon.html" class="btn btn-neutral float-right" title="Weapon" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Trigger.html" class="btn btn-neutral float-left" title="Trigger" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, nanos GbR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

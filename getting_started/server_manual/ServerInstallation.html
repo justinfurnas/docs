@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Server Installation &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Server Configuration" href="ServerConfiguration.html" />
+    <link rel="prev" title="Scripting Quick Start" href="../ScriptingQuickStart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ServerConfiguration.html">Server Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Doors.html">Doors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Fireworks.html">Fireworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/GravityGun.html">Gravity Gun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Hosting4Free.html">Hosting 4 Free</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PaintingMeshes.html">Painting Meshes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Cable.html">Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/StaticMesh.html">Static Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/Quat.html">Quaternion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/NanosWorldDefaultPack.html">nanos world Default Assets Pack</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Vault &amp; Marketplace</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../vault/Vault.html">Vault</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Getting Started</a> &raquo;</li>
+        
+      <li>Server Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/getting_started/server_manual/ServerInstallation.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="server-installation">
+<span id="serverinstallation"></span><h1>Server Installation<a class="headerlink" href="#server-installation" title="Permalink to this headline">¶</a></h1>
+<p>Creating servers in nanos world is very simple and straightforward, just a few steps and you have your server up and ready!</p>
+<div class="section" id="system-requirements">
+<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>OS: Windows or Linux</p></li>
+<li><p>Processor: 1.0 GHz (Faster core is better than multiple cores)</p></li>
+<li><p>Memory: 50 MB (grows if having too many Players or spawned Entities)</p></li>
+<li><p>Storage: 10 MB (+ Assets size)</p></li>
+<li><p>Network: Recommended at least 1 MB/s (grows if having too many Players or spawned Entities)</p></li>
+<li><p>Network Forwarded Ports: 7777 TCP and UDP (you can change that on the config)</p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>All nanos world server versions are hosted in our GitHub: <a class="reference external" href="https://github.com/nanos-world/nanos-world-server/releases">https://github.com/nanos-world/nanos-world-server/releases</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can get the latest version directly from this <a class="reference external" href="https://github.com/nanos-world/nanos-world-server/releases/latest">link</a>.</p>
+</div>
+<p>Summary:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="#windows">Windows Installation</a></p></li>
+<li><p><a class="reference external" href="#linux">Linux Installation</a></p></li>
+<li><p><a class="reference external" href="#debian-10">Debian 10 Installation</a></p></li>
+</ul>
+</div>
+<div class="section" id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<p>It should work fine without the need to install any external programs.
+Make sure that your system is updated.</p>
+<p>You can download it using <code class="docutils literal notranslate"><span class="pre">PowerShell</span></code>:</p>
+<div class="highlight-PowerShell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">Invoke-WebRequest</span> <span class="n">-Uri</span> <span class="s2">&quot;https://github.com/nanos-world/nanos-world-server/releases/latest/download/NanosWorldServer.exe&quot;</span> <span class="n">-OutFile</span> <span class="n">NanosWorldServer</span><span class="p">.</span><span class="n">exe</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Nanos world server executable may not work properly if one or more folders from the PATH of the server executable have spaces.</p>
+</div>
+<p>Depending of your system, some extra steps are needed.</p>
+<p>The system need to be updated with the latest version of your distribution.</p>
+<p>If your distribution is the latest and you have at least gcc-9 installed, it should work.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please check below if you have a error like this when launching the server : <code class="docutils literal notranslate"><span class="pre">version</span> <span class="pre">&quot;GLIBCXX_3.4.26&quot;</span> <span class="pre">not</span> <span class="pre">found</span></code></p>
+</div>
+<p>You can download it using <code class="docutils literal notranslate"><span class="pre">wget</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>wget <span class="s2">&quot;https://github.com/nanos-world/nanos-world-server/releases/latest/download/NanosWorldServer&quot;</span>
+<span class="gp">$ </span>chmod +x NanosWorldServer
+</pre></div>
+</div>
+</div>
+<div class="section" id="debian-10">
+<h2>Debian 10<a class="headerlink" href="#debian-10" title="Permalink to this headline">¶</a></h2>
+<p>For this distribution, some extra steps are required.
+Since nanos world use gcc 9, we will need to upgrade one of our package to the testing repository.</p>
+<p>First, update your <code class="docutils literal notranslate"><span class="pre">sources.list</span></code> file (located in : <code class="docutils literal notranslate"><span class="pre">/etc/apt/sources.list</span></code>), you will need to add the testing repo source, you can add theses lines below to your sources</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>deb http://ftp.fr.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp.fr.debian.org/debian/ testing main contrib non-free
+</pre></div>
+</div>
+<p>After, we will need to create a <code class="docutils literal notranslate"><span class="pre">preferences</span></code> file that will tell our system to not prefer installing testing package over stable unless specified.
+In <code class="docutils literal notranslate"><span class="pre">/etc/apt/preferences</span></code> (create if it doesn’t exists), add theses lines :</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Package: *
+Pin: release a=stable
+Pin-Priority: 700
+
+Package: *
+Pin: release a=testing
+Pin-Priority: 650
+</pre></div>
+</div>
+<p>Now, update your server to make sure that your system can find testing repositories with this command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>apt update
+</pre></div>
+</div>
+<p>We will install <code class="docutils literal notranslate"><span class="pre">libstdc++6</span></code> testing package to the server, it will allow the server to start correctly.
+You can type the command below to install it :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo apt-get --target-release testing install libstdc++6
+</pre></div>
+</div>
+<p>Finished!, you can now proceed to the next steps to configure your nanos world server.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If it still doesn’t work, try installing gcc-9 testing package and then, tell your system to use this new version of gcc instead of the old one.</p>
+</div>
+</div>
+<div class="section" id="server-configuration">
+<h2>Server configuration<a class="headerlink" href="#server-configuration" title="Permalink to this headline">¶</a></h2>
+<p>You made it! you can now go to the <a class="reference internal" href="ServerConfiguration.html#serverconfiguration"><span class="std std-ref">Server Configuration</span></a> page</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="ServerConfiguration.html" class="btn btn-neutral float-right" title="Server Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ScriptingQuickStart.html" class="btn btn-neutral float-left" title="Scripting Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, nanos GbR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

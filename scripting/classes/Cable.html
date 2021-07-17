@@ -1,0 +1,565 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Cable &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Character" href="Character.html" />
+    <link rel="prev" title="Classes" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/server_manual/ServerInstallation.html">Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/server_manual/ServerConfiguration.html">Server Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Doors.html">Doors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Fireworks.html">Fireworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/GravityGun.html">Gravity Gun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Hosting4Free.html">Hosting 4 Free</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PaintingMeshes.html">Painting Meshes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StaticMesh.html">Static Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Quat.html">Quaternion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/NanosWorldDefaultPack.html">nanos world Default Assets Pack</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Vault &amp; Marketplace</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../vault/Vault.html">Vault</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Cable</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/scripting/classes/Cable.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cable">
+<span id="id1"></span><h1>Cable<a class="headerlink" href="#cable" title="Permalink to this headline">¶</a></h1>
+<img alt="https://i.imgur.com/GG6W09Y.png" src="https://i.imgur.com/GG6W09Y.png" />
+<p>A Cable represents a Physics Constraint which joins two Actors with a rope-like visual representation between them.</p>
+<p>nanos world Cables are composed primarily of two Unreal Engine components: a <a class="reference external" href="https://docs.unrealengine.com/en-US/API/Plugins/CableComponent/UCableComponent/index.html">Cable</a> and a <a class="reference external" href="https://docs.unrealengine.com/en-US/InteractiveExperiences/Physics/Constraints/ConstraintsBlueprints/index.html">PhysicsConstraint</a>. The first is used for visual purposes only and the second one gives the effective physical effects that are applied to each end of the Cable.</p>
+<p>Cable <strong>visuals</strong> can be tweaked with <code class="docutils literal notranslate"><span class="pre">:SetForces()</span></code>, <code class="docutils literal notranslate"><span class="pre">:SetCableSettings()</span></code> and <code class="docutils literal notranslate"><span class="pre">:SetRenderingSettings()</span></code> methods. Those methods don’t have effect on the physics being applied and only have effects on the visual representation.</p>
+<p>Cable <strong>physics</strong> can be tweaked with <code class="docutils literal notranslate"><span class="pre">:SetAngularLimits()</span></code> and <code class="docutils literal notranslate"><span class="pre">:SetLinearLimits()</span></code>.</p>
+<p>After attaching the two sides of your cable, the physics can be tweaked to affect how the constraint will affect the objects.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can find more useful information regarding physical properties of the joint in the end of this page.</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">my_cable</span> <span class="o">=</span> <span class="n">Cable</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">cube_01</span> <span class="o">=</span> <span class="n">Prop</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(),</span> <span class="s2">&quot;NanosWorld::SM_Cube&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">cube_02</span> <span class="o">=</span> <span class="n">Prop</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(),</span> <span class="s2">&quot;NanosWorld::SM_Cube&quot;</span><span class="p">)</span>
+
+<span class="n">my_cable</span><span class="p">:</span><span class="n">AttachStartTo</span><span class="p">(</span><span class="n">cube_01</span><span class="p">)</span>
+<span class="n">my_cable</span><span class="p">:</span><span class="n">AttachEndTo</span><span class="p">(</span><span class="n">cube_02</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="constructor-parameters">
+<h2>Constructor Parameters<a class="headerlink" href="#constructor-parameters" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 45%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Type</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Default</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>location</p></td>
+<td><p>Vector(0, 0, 0)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>AttachStartTo( <br/><span style="margin-left: 10px;"></span> Actor other, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> relative_location = Vector(), <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> bone_name = “” <br/> )</p></td>
+<td><p>Attached the beginning of this cable to another Actor at a specific bone or relative location</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>AttachEndTo( <br/><span style="margin-left: 10px;"></span> Actor other, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> relative_location = Vector(), <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> bone_name = “” <br/> )</p></td>
+<td><p>Attached the end of this cable to another Actor at a specific bone or relative location</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>Destroy()</p></td>
+<td><p>Destroys this Actor</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>DetachEnd()</p></td>
+<td><p>Detaches the End of this Cable</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>DetachStart()</p></td>
+<td><p>Detaches the Start of this Cable</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetAngularLimits( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-constraintmotion"><span class="xref std std-term">ConstraintMotion</span></a> swing_1_motion, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-constraintmotion"><span class="xref std std-term">ConstraintMotion</span></a> swing_2_motion, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-constraintmotion"><span class="xref std std-term">ConstraintMotion</span></a> twist_motion, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> swing_1_limit, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> swing_2_limit, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> twist_limit <br/> )</p></td>
+<td><p>Sets the Physics Angular Limits of this cable</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetCableSettings( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> length, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> num_segments, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> solver_iterations <br/> )</p></td>
+<td><p>Set the overall settings for this cable (visuals only)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetForces( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> force, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> gravity_scale = 1 <br/> )</p></td>
+<td><p>Set the forces the cable has applied (visuals only)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetLinearLimits( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-constraintmotion"><span class="xref std std-term">ConstraintMotion</span></a> x_motion, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-constraintmotion"><span class="xref std std-term">ConstraintMotion</span></a> y_motion, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-constraintmotion"><span class="xref std std-term">ConstraintMotion</span></a> z_motion, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> limit, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> restitution = 0, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> use_soft_constraint = false, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> stiffness = 0, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> damping = 0 <br/> )</p></td>
+<td><p>Sets the Physics Linear Limits of this cable. If use_soft_constraint is enabled, then stiffness and damping will be used, otherwise restitution will be used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the Cable’s location in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetRenderingSettings( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> width, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> num_sides, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> tile_material <br/> )</p></td>
+<td><p>Set the rendering settings of this cable (visuals only)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetValue( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a> value, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> sync_on_clients <br/> )</p></td>
+<td><p>Sets a value in this entity, which can be accessed by any package (optionally sync on clients if called from server)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsValid()</p></td>
+<td><p>Returns if this entity is valid (i.e. wasn’t destroyed and points to a valid entity)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetID()</p></td>
+<td><p>Gets the network ID of this entity (same in both client and server)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetLocation()</p></td>
+<td><p>Get the Cable’s position in the game world</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>any</p></td>
+<td><p>GetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key)</p></td>
+<td><p>Gets a value given a key</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="events-inherited-from-actor">
+<h3>Events (Inherited from Actor)<a class="headerlink" href="#events-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Destroy</p></td>
+<td><p>Entity self</p></td>
+<td><p>Triggered when an Entity is Destroyed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Spawn</p></td>
+<td><p>Entity self</p></td>
+<td><p>Triggered when an Entity is Spawned/Created</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>ValueChange</p></td>
+<td><p>Entity self, <br/> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key, <br/> <a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a> value</p></td>
+<td><p>Triggered when an Entity has it’s value changed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="linear-limits">
+<h2>Linear Limits<a class="headerlink" href="#linear-limits" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>x_motion</strong>, <strong>y_motion</strong> or <strong>z_motion</strong> indicate the linear constraint along its Axis.</p></li>
+<li><p><strong>limit</strong> defines the distance allowed between the two joint reference frames.</p></li>
+</ul>
+<p>The Constraints can be set to one of the following <em>Constraint Motions</em>:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Constraint Motion</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ConstraintMotion.Free</strong></p></td>
+<td><p>No constraint along this axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ConstraintMotion.Limited</strong></p></td>
+<td><p>Limited freedom along this axis. The limit is defined for all axes by the <strong>limit</strong> property.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ConstraintMotion.Locked</strong></p></td>
+<td><p>Fully constraint along this axis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="angular-limits">
+<h2>Angular Limits<a class="headerlink" href="#angular-limits" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>swing_1_motion</strong>, <strong>swing_2_motion</strong> or <strong>twist_motion</strong> indicates whether it’s limit is used.</p></li>
+<li><p><strong>swing_1_limit</strong> Angle of movement along the <strong>XY</strong> Plane.</p></li>
+<li><p><strong>swing_2_limit</strong> Angle of movement along the <strong>XZ</strong> Plane.</p></li>
+<li><p><strong>twist_limit</strong> Symmetric angle of roll along the <strong>X</strong>-axis.</p></li>
+</ul>
+<p>The Constraints can be set to one of the following <em>Constraint Motions</em>:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Constraint Motion</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ConstraintMotion.Free</strong></p></td>
+<td><p>No constraint along this axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ConstraintMotion.Limited</strong></p></td>
+<td><p>Limited freedom around this axis. The limit for each Angular Motion is controlled individually by a correspondingly named Limit property: <strong>swing_1_limit</strong>, <strong>swing_2_limit</strong>, and <strong>twist_limit</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ConstraintMotion.Locked</strong></p></td>
+<td><p>Fully constraint along this axis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Character.html" class="btn btn-neutral float-right" title="Character" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Classes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, nanos GbR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1020 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Weapon &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="WebUI" href="WebUI.html" />
+    <link rel="prev" title="Vehicle" href="Vehicle.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/server_manual/ServerInstallation.html">Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/server_manual/ServerConfiguration.html">Server Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Doors.html">Doors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Fireworks.html">Fireworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/GravityGun.html">Gravity Gun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Hosting4Free.html">Hosting 4 Free</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PaintingMeshes.html">Painting Meshes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Cable.html">Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StaticMesh.html">Static Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Quat.html">Quaternion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/NanosWorldDefaultPack.html">nanos world Default Assets Pack</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Vault &amp; Marketplace</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../vault/Vault.html">Vault</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Weapon</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/scripting/classes/Weapon.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="weapon">
+<span id="id1"></span><h1>Weapon<a class="headerlink" href="#weapon" title="Permalink to this headline">¶</a></h1>
+<img alt="https://i.imgur.com/GqB7p3Z.png" src="https://i.imgur.com/GqB7p3Z.png" />
+<p>Weapons are fully customizable, all pieces of the weapon can be changed with immense possibility of creation</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please take a look at our Default’s Weapon package with all built-in Weapons already properly configured and ready to use: <a class="reference external" href="https://github.com/nanos-world/nanos-world-weapons">https://github.com/nanos-world/nanos-world-weapons</a>.</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Spawning an AK47</span>
+<span class="kd">local</span> <span class="n">new_weapon</span> <span class="o">=</span> <span class="n">Weapon</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">900</span><span class="p">,</span> <span class="mi">185</span><span class="p">,</span> <span class="mi">215</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SK_AK47&quot;</span><span class="p">,</span> <span class="n">CollisionType</span><span class="p">.</span><span class="n">Normal</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+
+<span class="c1">-- Configures Weapon Base Settings</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetAmmoSettings</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetDamage</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSpread</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetBulletSettings</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetCadence</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1">-- Configures how the Character Grabs and Aims the Weapon</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetHandlingMode</span><span class="p">(</span><span class="n">HandlingMode</span><span class="p">.</span><span class="n">DoubleHandedWeapon</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSightTransform</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">14.85</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetLeftHandTransform</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">26</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">90</span><span class="p">))</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetRightHandOffset</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="c1">-- Configures Weapon Particles</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetParticlesBulletTrail</span><span class="p">(</span><span class="s2">&quot;NanosWorld::P_Bullet_Trail&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetParticlesBarrel</span><span class="p">(</span><span class="s2">&quot;NanosWorld::P_Weapon_BarrelSmoke&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetParticlesShells</span><span class="p">(</span><span class="s2">&quot;NanosWorld::P_Weapon_Shells_762x39&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Configures Weapon Sounds</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSoundDry</span><span class="p">(</span><span class="s2">&quot;NanosWorld::A_Rifle_Dry&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSoundLoad</span><span class="p">(</span><span class="s2">&quot;NanosWorld::A_Rifle_Load&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSoundUnload</span><span class="p">(</span><span class="s2">&quot;NanosWorld::A_Rifle_Unload&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSoundZooming</span><span class="p">(</span><span class="s2">&quot;NanosWorld::A_AimZoom&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSoundAim</span><span class="p">(</span><span class="s2">&quot;NanosWorld::A_Rattle&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetSoundFire</span><span class="p">(</span><span class="s2">&quot;NanosWorld::A_AK47_Shot&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Configures Weapon Animations</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetAnimationCharacterFire</span><span class="p">(</span><span class="s2">&quot;NanosWorld::AM_Mannequin_Sight_Fire&quot;</span><span class="p">)</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetAnimationReload</span><span class="p">(</span><span class="s2">&quot;NanosWorld::AM_Mannequin_Reload_Rifle&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Configures the Mesh to drop when reloading</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetMagazineMesh</span><span class="p">(</span><span class="s2">&quot;NanosWorld::SM_AK47_Mag_Empty&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Configures the Crosshair Type</span>
+<span class="n">new_weapon</span><span class="p">:</span><span class="n">SetCrosshairSetting</span><span class="p">(</span><span class="n">CrosshairType</span><span class="p">.</span><span class="n">Regular</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using our Default Weapons Package <a class="reference external" href="https://github.com/nanos-world/nanos-world-weapons">https://github.com/nanos-world/nanos-world-weapons</a> (already built-in included) for spawning an AK47:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Includes the nanos world Default Weapons Package in your Package (you don&#39;t need to download it, just include it!)</span>
+<span class="n">Package</span><span class="p">:</span><span class="n">RequirePackage</span><span class="p">(</span><span class="s2">&quot;NanosWorldWeapons&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Spawning the AK47</span>
+<span class="kd">local</span> <span class="n">my_ak47</span> <span class="o">=</span> <span class="n">NanosWorldWeapons</span><span class="p">.</span><span class="n">AK47</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">1035</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">())</span>
+
+<span class="c1">-- Giving the Weapon to a Character</span>
+<span class="n">my_character</span><span class="p">:</span><span class="n">PickUp</span><span class="p">(</span><span class="n">my_ak47</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="related-tutorials">
+<h2>Related Tutorials<a class="headerlink" href="#related-tutorials" title="Permalink to this headline">¶</a></h2>
+<script>
+        DrawCard(
+                "../../tutorials/PropShooter.html",
+                "https://i.imgur.com/Mq3FBv4.png",
+                "Prop Shooter",
+                "A small example of how to shoot Props from a weapon!"
+        );
+
+        DrawCard(
+                "../../tutorials/WeaponScope.html",
+                "https://i.imgur.com/K5eVATY.png",
+                "Weapon Scope",
+                "See how to attach a scope (ex: Red Dot) to any weapon!"
+        );
+
+        DrawCard(
+                "../../tutorials/WeaponFlashlight.html",
+                "https://i.imgur.com/JUtyW9s.png",
+                "Weapon Flashlight",
+                "See how to create and attach a flashlight to any weapon!"
+        );
+</script></div>
+<div class="section" id="constructor-parameters">
+<h2>Constructor Parameters<a class="headerlink" href="#constructor-parameters" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 55%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Type</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Default</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>location</p></td>
+<td><p>Vector(0, 0, 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>rotation</p></td>
+<td><p>Rotator(0, 0, 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>model_name</p></td>
+<td><p>Skeletal Mesh Path</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-collisiontype"><span class="xref std std-term">CollisionType</span></a></p></td>
+<td><p>collision_type</p></td>
+<td><p>CollisionType.Normal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>gravity_enabled</p></td>
+<td><p>true</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="available-crosshairs">
+<h2>Available Crosshairs<a class="headerlink" href="#available-crosshairs" title="Permalink to this headline">¶</a></h2>
+<img alt="https://i.imgur.com/foF0F0d.jpg" src="https://i.imgur.com/foF0F0d.jpg" />
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetAmmoBag(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> new_ammo)</p></td>
+<td><p>Sets this Weapon’s Ammo in the Bag</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetAmmoClip(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> new_ammo)</p></td>
+<td><p>Sets this Weapon’s Ammo in the Clip</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetAmmoSettings( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ammo_clip, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ammo_bag, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ammo_to_reload = ammo_clip, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> clip_capacity = ammo_clip <br/> )</p></td>
+<td><p>Auxiliar for setting and configuring ammo <br/> * <strong>ammo_to_reload</strong> is the amount of ammo which will be effectively reloaded in the clip when reloading - defaults to <strong>ammo_clip</strong> <br/> * <strong>clip_capacity</strong> is how much ammo the clip can hold without needing to reload - defaults to <strong>ammo_clip</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetAnimationCharacterFire( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> animation_asset_path <br/> )</p></td>
+<td><p>Animation played by the Character when Firing</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetAnimationReload( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> animation_asset_path <br/> )</p></td>
+<td><p>Animation playedb y the Character when Reloading (currently this animation must be one of the default ones (<em>AM_Mannequin_Reload_Rifle, AM_Mannequin_Reload_Pistol or AM_Mannequin_Reload_Shotgun</em>) as they have internal triggers to finish the reload).</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetBulletColor(<a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> color)</p></td>
+<td><p>Set the Bullet Color (only has effect if using Bullet Trail particle <em>P_Bullet_Trail</em> or if you particle has the <em>Color</em> parameter)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetBulletSettings( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> bullet_count, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> bullet_max_distance, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> bullet_velocity, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> bullet_color <br/> )</p></td>
+<td><p>Auxiliar for setting and configuring the Bullet. <br/> * <strong>bullet_velocity</strong> is visuals only <br/> * <strong>bullet_count</strong> (1 for common weapons, &gt; 1 for shotguns)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCadence(<span class="xref std std-ref">number</span> cadence)</p></td>
+<td><p>Speed of shots (1 shot at each <code class="docutils literal notranslate"><span class="pre">cadence</span></code> seconds)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetClipCapacity(<span class="xref std std-ref">number</span> clip)</p></td>
+<td><p>Capacity of the Weapon’s Clip</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCrosshairSetting(<a class="reference internal" href="../Glossary.html#term-crosshairtype"><span class="xref std std-term">CrosshairType</span></a> type)</p></td>
+<td><p>Sets the Crosshair Type</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetDamage(<span class="xref std std-ref">number</span> damage)</p></td>
+<td><p>Base Weapon’s Damage</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetHandlingMode(<a class="reference internal" href="../Glossary.html#term-handlingmode"><span class="xref std std-term">HandlingMode</span></a> mode)</p></td>
+<td><p>Sets how the Character grabs this Weapon</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetLeftHandTransform( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> rotation <br/> )</p></td>
+<td><p>Left Hand Offset</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetMagazineMesh(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> static_mesh_asset_path)</p></td>
+<td><p>The mesh used when the Character reloads the weapon. Will drop this Mesh as an animation effect.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetParticlesBulletTrail(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> particle_asset_path)</p></td>
+<td><p>Particle of the Bullet flying</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetParticlesBarrel(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> particle_asset_path)</p></td>
+<td><p>Particle of the Fire Blast in the muzzle</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetParticlesShells(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> particle_asset_path)</p></td>
+<td><p>Particle of the empty bullet flying from the weapon when shooting</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetRightHandOffset(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> offset)</p></td>
+<td><p>Offset of Right Hand. To position relative to the camera.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSightFOVMultiplier(<span class="xref std std-ref">number</span> multiplier)</p></td>
+<td><p>The FOV multiplier when ADS</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSightTransform( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> rotation <br/> )</p></td>
+<td><p>Offset applied to align player’s head to weapon’s sight and rotation applied on the weapon when ADS</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSoundDry(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> sound_asset_path)</p></td>
+<td><p>Sound when weapon has not bullet and try to shoot</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSoundLoad(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> sound_asset_path)</p></td>
+<td><p>Sound when Loading a magazine</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSoundUnload(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> sound_asset_path)</p></td>
+<td><p>Sound when Unloading a magazine</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSoundZooming(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> sound_asset_path)</p></td>
+<td><p>Sound when Zooming</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSoundAim(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> sound_asset_path)</p></td>
+<td><p>Sound when Aiming</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSoundFire(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> sound_asset_path)</p></td>
+<td><p>Sound when Shooting</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSpread(<span class="xref std std-ref">number</span> damage)</p></td>
+<td><p>Base Weapon’s Spread (the higher the less precision - recommended value: 20)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetUsageSettings( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> can_hold_use, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> hold_release_use <br/> )</p></td>
+<td><p>Sets if the Weapon can hold to keep firing and if it needs to release to fire</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetAmmoBag()</p></td>
+<td><p>Gets this Weapon’s Ammo Bag</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetAmmoClip()</p></td>
+<td><p>Gets this Weapon’s Ammo Clip</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a></p></td>
+<td><p>GetBulletColor()</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetDamage()</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetRightHandOffset()</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetSpread()</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functions-inherited-from-pickable">
+<h3>Functions (Inherited from Pickable)<a class="headerlink" href="#functions-inherited-from-pickable" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>AddSkeletalMeshAttached( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> id, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> static_mesh_path <br/> )</p></td>
+<td><p>Spawns and Attaches a SkeletalMesh into this Actor, the SkeletalMesh must have the same Skeletal used by this Actor Mesh, and will follow all animations from it. Uses a custom ID to be used for removing it further</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>AddStaticMeshAttached( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> id, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> static_mesh_path, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> socket = “”, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> relative_location = Vector(), <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> relative_rotation = Rotator() <br/> )</p></td>
+<td><p>Spawns and Attaches a StaticMesh into this Actor in a Socket with relative Location and Rotation. Uses a custom ID to be used for removing it further</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>SetDefaultMaterial( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-materialtype"><span class="xref std std-term">MaterialType</span></a> material_type = MaterialType.Masked <br/> )</p></td>
+<td><p>Replaces all materials of this actor with a nanos basic material with comon parameters available <strong>Material Types</strong>: (<em>Masked, Translucent, TranslucentDepth</em>)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetMaterialColorParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> color <br/> )</p></td>
+<td><p>Sets a Color parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>SetMaterialScalarParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> scalar <br/> )</p></td>
+<td><p>Sets a scalar parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetMaterialTextureParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> texture_path <br/> )</p></td>
+<td><p>Loads a image from computer (relative to <cite>Assets/</cite> folder) and sets as parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>SetMaterialVectorParameter( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> parameter_name, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> vector <br/> )</p></td>
+<td><p>Sets a Vector parameter in this actor’s material</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>PullUse()</p></td>
+<td><p>Force this Pickable to be used (e.g. if this is a Weapon, will fire)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>ReleaseUse()</p></td>
+<td><p>Force this Pickable to be released the usage</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>RemoveSkeletalMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> id)</p></td>
+<td><p>Removes, if existing, a SkeletalMesh from this Actor given it’s custom ID</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>RemoveStaticMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> id)</p></td>
+<td><p>Removes, if existing, a StaticMesh from this Actor given it’s custom ID</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetAssetName()</p></td>
+<td><p>Gets the Asset name</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a></p></td>
+<td><p>GetHandler()</p></td>
+<td><p>Gets the Character (if existing) which is holding this</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions-inherited-from-actor">
+<h3>Functions (Inherited from Actor)<a class="headerlink" href="#functions-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>AddImpulse( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> force, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> velocity_change = false <br/> )</p></td>
+<td><p>Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>AttachTo( <br/><span style="margin-left: 10px;"></span> Actor other, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-attachmentrule"><span class="xref std std-term">AttachmentRule</span></a> attachment_rule = SnapToTarget, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> bone_name = “”, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> autodestroy_when_detached = false <br/> )</p></td>
+<td><p>Attaches this Actor to any other Actor, optionally at a specific bone</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>Destroy()</p></td>
+<td><p>Destroys this Actor</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>Detach()</p></td>
+<td><p>Detaches this Actor from AttachedTo Actor</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetCollision(<a class="reference internal" href="../Glossary.html#term-collisiontype"><span class="xref std std-term">CollisionType</span></a>)</p></td>
+<td><p>Sets the actor’s collision <strong>Collision Types</strong>: <em>Normal, Static Only, NoCollision</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetForce(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> force, <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> local = true)</p></td>
+<td><p>Adds a permanent force to this actor. Set to Vector(0, 0, 0) to cancel.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetGravityEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetHighlightEnabled( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Index <br/> )</p></td>
+<td><p>Sets if this Actors is Highlighting at a specific Index color</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetInitialLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the initial location</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the actor’s location in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetNetworkAuthority( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="Player.html#player"><span class="std std-ref">Player</span></a> player = nil, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> time_ms = 0 <br/> )</p></td>
+<td><p>Sets this actor’s new Player network authority. This player will be manually assigned to handle this actor physics and share it’s location with other clients. The authority assignment will still be overriden by the game automatically, to avoid that set a big time value so the player can keep longer with the authority and override the natural authority selection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetRotation(<a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a>)</p></td>
+<td><p>Sets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="authority-only-label" class="authority-only-label" src="../../_images/authority-only.svg" /></p></td>
+<td></td>
+<td><p>SetScale(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a>)</p></td>
+<td><p>Sets the actor’s scale</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetValue( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a> value, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> sync_on_clients <br/> )</p></td>
+<td><p>Sets a value in this entity, which can be accessed by any package (optionally sync on clients if called from server)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>TranslateTo( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> location, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> speed, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> sweep, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> teleport <br/> )</p></td>
+<td><p>Smoothly moves this actor to a Location with a certain Speed - optionally enables sweep to stop when colliding - use teleport flag will not affect velocity</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>RotateTo( <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> rotation, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> speed, <br/><span style="margin-left: 10px;"></span> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> teleport <br/> )</p></td>
+<td><p>Smoothly rotates this actor to a Rotation with a certain Speed - use teleport flag will not affect velocity</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsGravityEnabled()</p></td>
+<td><p>Gets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsInWater()</p></td>
+<td><p>Gets if the actor is in Water</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsNetworkDistributed()</p></td>
+<td><p>Gets if the actor is network distributed. Only actors being network distributed can be set network authority.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsValid()</p></td>
+<td><p>Returns if this entity is valid (i.e. wasn’t destroyed and points to a valid entity)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-table"><span class="xref std std-term">table</span></a></p></td>
+<td><p>GetAttachedEntities()</p></td>
+<td><p>Gets all actors attached to this entity</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a></p></td>
+<td><p>GetAttachedTo()</p></td>
+<td><p>Gets the actor i’m attached to</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="client-only-label" class="client-only-label" src="../../_images/client-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-table"><span class="xref std std-term">table</span></a></p></td>
+<td><p>GetBounds()</p></td>
+<td><p>Gets the actor bounds size. <br/> <br/> Returned Table:  <code class="docutils literal notranslate"><span class="pre">{&quot;Origin&quot;,</span> <span class="pre">&quot;BoxExtent&quot;,</span> <span class="pre">&quot;SphereRadius&quot;}</span></code></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetCollision()</p></td>
+<td><p>Gets the current actor’s collision</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetID()</p></td>
+<td><p>Gets the network ID of this entity (same in both client and server)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetLocation()</p></td>
+<td><p>Get the actor’s position in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetInitialLocation()</p></td>
+<td><p>Gets the initial location</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>GetRotation()</p></td>
+<td><p>Gets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetScale()</p></td>
+<td><p>Gets the actor’s scale</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetType()</p></td>
+<td><p>Returns the type of this Actor</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>any</p></td>
+<td><p>GetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key)</p></td>
+<td><p>Gets a value given a key</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="client-only-label" class="client-only-label" src="../../_images/client-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetVelocity()</p></td>
+<td><p>Returns the current actor Velocity</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>Subscribe(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> event_name, <a class="reference internal" href="../Glossary.html#term-function"><span class="xref std std-term">function</span></a>)</p></td>
+<td><p>Subscribes for an Event</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>Unsubscribe(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> event_name, <a class="reference internal" href="../Glossary.html#term-function"><span class="xref std std-term">function</span></a> = nil)</p></td>
+<td><p>Unsubscribes from all subscribed Events in this Entity and in this Package, optionally passing the function to unsubscribe only that callback</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Fire</p></td>
+<td><p><a class="reference internal" href="#weapon"><span class="std std-ref">Weapon</span></a> self, <br/> <a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a> shooter</p></td>
+<td><p>When this weapon is fired</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Reload</p></td>
+<td><p><a class="reference internal" href="#weapon"><span class="std std-ref">Weapon</span></a> self, <br/> <a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a> character, <br/> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ammo_to_reload</p></td>
+<td><p>When this weapon is reloaded, optionally by a Character</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="events-inherited-from-pickable">
+<h3>Events (Inherited from Pickable)<a class="headerlink" href="#events-inherited-from-pickable" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Drop</p></td>
+<td><p>Entity pickable, <br/> <a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a> character, <br/> <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> was_triggered_by_player</p></td>
+<td><p>When a Character drops this</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Hit</p></td>
+<td><p>Entity pickable, <br/> <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> intensity</p></td>
+<td><p>When this Entity hits something</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>PickUp</p></td>
+<td><p>Entity pickable, <br/> <a class="reference internal" href="Character.html#character"><span class="std std-ref">Character</span></a> character</p></td>
+<td><p>When a Character picks up this</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="events-inherited-from-actor">
+<h3>Events (Inherited from Actor)<a class="headerlink" href="#events-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Destroy</p></td>
+<td><p>Entity self</p></td>
+<td><p>Triggered when an Entity is Destroyed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Spawn</p></td>
+<td><p>Entity self</p></td>
+<td><p>Triggered when an Entity is Spawned/Created</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>ValueChange</p></td>
+<td><p>Entity self, <br/> <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> key, <br/> <a class="reference internal" href="../Glossary.html#term-any"><span class="xref std std-term">any</span></a> value</p></td>
+<td><p>Triggered when an Entity has it’s value changed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="WebUI.html" class="btn btn-neutral float-right" title="WebUI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Vehicle.html" class="btn btn-neutral float-left" title="Vehicle" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, nanos GbR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
